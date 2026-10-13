@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Jose Antonio Bodes García"/>
+        <link rel="stylesheet" href="formulario2.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <div id="formulario">
+            <form action="formularioCorregido.php" method="GET">
+
+                <h1>Asignatura</h1>
+
+                <input type="radio" name="asignatura" value="Programacion" class="radio">
+                <label class="labelRadio">Programacion</label>
+
+                <input type="radio" name="asignatura" value="Bases de Datos" class="radio">
+                <label class="labelRadio">Bases de Datos</label>
+
+                <input type="radio" name="asignatura" value="Sistemas informaticos" class="radio">
+                <label class="labelRadio">Sistemas informaticos</label>
+
+                <input type="radio" name="asignatura" value="Entornos de Desarrollo" class="radio">
+                <label class="labelRadio">Entornos de Desarrollo</label>
+
+                <input type="radio" name="asignatura" value="IPE" class="radio">
+                <label class="labelRadio">IPE</label>
+
+                <input type="radio" name="asignatura" value="Lenguaje de Marcas" class="radio">
+                <label class="labelRadio">Lenguaje de Marcas</label>
+
+                <input type="radio" name="asignatura" value="Ingles" class="radio">
+                <label class="labelRadio">Ingles</label>
+
+                <h1>Duracion</h1>
+
+                <input type="text" name="horas" placeholder="horas" id="horas">
+
+                <br/>
+
+                <h1>Informacion</h1>
+
+                <textarea name="informacion" id="informacion"></textarea>
+
+                <br/>
+
+                <h1>Profesores</h1>
+
+                <input type="checkbox" name="profesor[]" value="profesor1" class="checkbox">
+                <label class="labelCheckbox">profesor1</label>
+                <br/>
+
+                <input type="checkbox" name="profesor[]" value="profesor2" class="checkbox">
+                <label class="labelCheckbox">profesor2</label>
+                <br/>
+
+                <input type="checkbox" name="profesor[]" value="profesor3" class="checkbox">
+                <label class="labelCheckbox">profesor3</label>
+                <br/>
+
+                <input type="checkbox" name="profesor[]" value="profesor4" class="checkbox">
+                <label class="labelCheckbox">profesor4</label>
+                <br/>
+
+                <input type="submit" value="enviar" class="boton">
+
+            </form>
+        </div>
+    </body>
+</html>
